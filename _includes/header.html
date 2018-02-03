@@ -1,32 +1,30 @@
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">Logo</a>
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-
-          <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">Home </a></li>
-            {% if page_paths %}
-                {% for path in page_paths %}
-                    {% assign my_page = site.pages | where: "path", path | first %}
-                    {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}              
-          </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Home</a></li>
-                            {% if page_paths %}
-                {% for path in page_paths %}
-                    {% assign my_page = site.pages | where: "path", path | first %}
-                    {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            {% endif %} 
-          </ul>        
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+<header class="navigation" role="banner">
+    <div class="navigation-wrapper">
+      <a href="#scroll-link-1" class="logo scroll-on-page-link">
+        <img src="logo.png" alt="Korinos.hu Logo">
+      </a>
+      <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+      <nav role="navigation">
+        <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link more"><a class="scroll-on-page-link" href="#scroll-link-2">Galéria</a>
+            <ul class="submenu">
+              <li><a href="../lakokocsi1.html">1-es lakókocsi</a></li>
+              <li><a href="../lakokocsi2.html">2-es lakókocsi</a></li>
+              <li><a href="../lakokocsi3.html">3-as lakókocsi</a></li>
+             <li><a href="part.html">A part és a kemping</a></li>
+            </ul>
+          </li> <li class="nav-link divider">/</li>
+          <li class="nav-link"><a class="scroll-on-page-link" href="#scroll-link-3">Információk</a></li>
+          <li class="nav-link divider">/</li>
+          <li class="nav-link"><a class="scroll-on-page-link" href="#scroll-link-4">Kapcsolat <span>&amp</span> Elérhetőség</a>
+            <ul class="submenu">
+              <li><a href="mailto:laszlo1965@gmail">laszlo1965@gmail.com</a></li>
+			  <li><a href="mailto:dovas@t-online.hu.com">dovas@t-online.hu</a></li>
+			  <li><a href="tel:+36308322304">+3630 832 2304 </a></li> 
+              <li><a href="tel:+36302379036">+3630 237 9036</a></li>
+           
+          </li>
+        </ul>
+      </nav>
     </div>
-</nav>
+  </header>
