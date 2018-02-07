@@ -17,6 +17,5 @@ permalink: /blog/:year/:month/:day/:title
 
 
 sass:
-    style: compressed
     include: ["_pages"]
-    sass_dir: ./_scss
+    
