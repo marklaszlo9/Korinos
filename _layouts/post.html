@@ -1,14 +1,17 @@
----
-layout: default
----
-<h1 class="post-headline">{{page.title}}</h1>
-<p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
+<!DOCTYPE html>
 
-{{content}}
+<html>
+  {% include gal_head.html %}
 
-<!-- Comments only for posts -->
-{% if page.path contains '_posts' %}
-    {% if site.disqus-shortname %}
-        {% include disqus.html %}
-    {% endif %}
-{% endif %}
+  <body>
+
+    {% include gal_header.html %}
+
+
+        {{ content }}
+      
+   
+
+  </body>
+
+</html>

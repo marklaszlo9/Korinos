@@ -1,12 +1,11 @@
-title: Viostest
-email: info@viostream.com
+title: Lakokocsis
+email: laszlo1965@gmail.com
 name: Viostream
-repository: 'Viostream/viostream.github.io'
+repository: 'marklaszlo9/jekyll'
 permalink: /blog/:year/:month/:day/:title
 markdown: kramdown
-gems:
-   - jekyll-avatar
-   - jekyll-github-metadata
+plugins:
+  - jekyll-assets
 description: > # this means to ignore newlines until "baseurl:"
   Engage &amp; educate your audience with video. Viostream is the complete online video platform solution - helping businesses since 2002. Get a FREE trial today.
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -17,5 +16,4 @@ permalink: /blog/:year/:month/:day/:title
 
 
 sass:
-    include: ["_pages"]
-    
+  sass_dir: _sass
