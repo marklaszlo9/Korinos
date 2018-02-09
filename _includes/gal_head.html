@@ -2,9 +2,10 @@
 <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
-	<meta name="description" content="Lakókocsis nyaralás Görögországban">
+	
 
   <meta name="keywords" content="nyaralás, görögország, homokos strand, tenger, lakókocsi">
 
