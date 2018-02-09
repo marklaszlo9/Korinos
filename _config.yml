@@ -19,3 +19,5 @@ github_username:  marklaszlo9
 exclude: [README.markdown]
 sass:
   sass_dir: _sass
+include:
+  - _site
