@@ -13,7 +13,7 @@ The theme comes with pre-installed analytics, disqus and html compressor. But ma
 ## Installation
 * Fork the repository
 * Go to settings and set Github Pages source as master.
-* Your new site should be ready at https://username.github.io/hagura/
+* Your new site should be ready at https://username.github.io/jekyll/
 
 
 
