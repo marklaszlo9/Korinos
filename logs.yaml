@@ -1,0 +1,7 @@
+files:
+ - /var/log/cloud-init.log
+
+destination:
+  host: logs7.papertrailapp.com
+  port: 17925
+  protocol: tcp
